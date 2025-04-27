@@ -59,8 +59,19 @@ html, body {
     margin: 10px;
 }
 
-/*Remove e Troca a cor dos links*/
+/*Remove e Troca a cor dos links
 a{
 	color: #ffffff;
 	text-decoration: none;
+}*/
+.news-links p {
+    margin: 10px 0;
+}
+.news-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #007bff;
+}
+.news-links a:hover {
+    text-decoration: underline;
 }
