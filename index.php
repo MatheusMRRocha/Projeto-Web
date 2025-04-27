@@ -16,6 +16,11 @@
                 <p><a href="html/noticias/noticia2.php">FIFA 26: EA revoluciona o Modo Carreira</a></p>
                 <p><a href="html/noticias/noticia3.php">Cyberpunk 2077: Phantom Liberty já está disponível</a></p>
                 <p><a href="html/noticias/noticia4.php">The Last of Us Parte III: Produção confirmada!</a></p>
+
+                <hr>
+
+                <p><a href="formulario.html">Contato</a></p>
+                
             </div>
         </main>
 
