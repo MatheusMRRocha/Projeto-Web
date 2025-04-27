@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Referência ao arquivo meuscript.js -->
+    <script defer src="meuscript.js"></script>
+    
 </head>
 <body>
     <div class="container">
