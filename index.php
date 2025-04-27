@@ -22,7 +22,7 @@
 
                 <hr>
 
-                <p><a href="formulario.html">Contato</a></p>
+                <p><a href="formulario.php">Contato</a></p>
                 
             </div>
         </main>
