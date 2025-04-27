@@ -49,6 +49,8 @@ html, body {
 .cabecalho_links {
     display: inline-block;
     margin: 10px;
+    color: #ffffff;
+	text-decoration: none;
 }
 
 /*Alinhamento dos links do cabeçalho*/
