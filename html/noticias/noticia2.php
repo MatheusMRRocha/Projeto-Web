@@ -1,5 +1,13 @@
-<link rel="stylesheet" href="style.css">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
 <div class="container">
     <h1>FIFA 26: EA revoluciona o Modo Carreira</h1>
 
@@ -15,3 +23,6 @@
         </a>
     </div>
 </div>
+
+</body>
+</html>
