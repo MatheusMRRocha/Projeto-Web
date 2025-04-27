@@ -1,0 +1,64 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima = 100% da tela */
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #0f006d;
+    color: white;
+    padding: 20px;
+    height: 100px;
+    flex-shrink: 0;
+}
+#cabecalho {
+    display: flex; /* Ativa o Flexbox para os filhos */
+    justify-content: space-between; /* Espaça os filhos ao máximo, colocando o primeiro à esquerda e o último à direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Conteudo que cresce e empurra o rodape */
+.conteudo {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Rodapé fixo no final, mesmo com conteúdo vazio */
+.rodape {
+    background-color: #0f006d;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+/*Alinhamento dos links do cabeçalho*/
+.cabecalho_links {
+    display: inline-block;
+    margin: 10px;
+}
+
+/*Alinhamento dos links do cabeçalho*/
+.logo_nome{
+    display: inline-block;
+    margin: 10px;
+}
+
+/*Remove e Troca a cor dos links*/
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
