@@ -11,6 +11,7 @@
 <?php include '../funcoes/login_processamento.php'; ?>
 
 <div class="container">
+    <?php include 'cabecalho.php'; ?>
     <div class="centralizar_conteudo">
         <div class="caixa">
             <h2>Login</h2>
@@ -31,6 +32,7 @@
             <p>Não tem conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
         </div>    
     </div>
+    <?php include 'rodape.php'; ?>
 </div>
 
 </body>
