@@ -32,7 +32,7 @@
     <?php endif; ?>
 
     <p>Já tem conta? <a href="login.php">Voltar para o login</a></p>
+    <?php include 'rodape.php'; ?>
 </div>
-<?php include 'rodape.php'; ?>
 </body>
 </html>
