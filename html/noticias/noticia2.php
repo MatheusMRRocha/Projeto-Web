@@ -18,7 +18,7 @@
     <p>A EA promete também melhorias gráficas, movimentação mais realista e um sistema de escolhas que afetará diretamente o rumo da carreira. FIFA 26 será lançado em setembro para múltiplas plataformas.</p>
 
     <div style="text-align: center; margin-top: 30px;">
-        <a href="index.php">
+        <a href="../../index.php">
             <button>Voltar para a Home</button>
         </a>
     </div>

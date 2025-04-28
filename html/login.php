@@ -11,22 +11,26 @@
 <?php include '../funcoes/login_processamento.php'; ?>
 
 <div class="container">
-    <h2>Login</h2>
-    <form method="POST" action="">
-        <label>Login:</label>
-        <input type="text" name="login" required>
+    <div class="centralizar_conteudo">
+        <div class="caixa">
+            <h2>Login</h2>
+            <form method="POST" action="">
+                <label>Login:</label>
+                <input type="text" name="login" required>
 
-        <label>Senha:</label>
-        <input type="password" name="senha" required>
+                <label>Senha:</label>
+                <input type="password" name="senha" required>
 
-        <button type="submit">Entrar</button>
-    </form>
+                <button type="submit">Entrar</button>
+            </form>
 
-    <?php if ($error): ?>
-        <p class="error"><?php echo $error; ?></p>
-    <?php endif; ?>
+            <?php if ($error): ?>
+                <p class="error"><?php echo $error; ?></p>
+            <?php endif; ?>
 
-    <p>Não tem conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
+            <p>Não tem conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
+        </div>    
+    </div>
 </div>
 
 </body>

@@ -5,7 +5,7 @@
     <title>Página Inicial</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Referência ao arquivo meuscript.js -->
-    <script defer src="meuscript.js"></script>
+    <script defer src="js/meuscript.js"></script>
     
 </head>
 <body>
@@ -20,6 +20,9 @@
                 <p><a href="html/noticias/noticia3.php">Cyberpunk 2077: Phantom Liberty já está disponível</a></p>
                 <p><a href="html/noticias/noticia4.php">The Last of Us Parte III: Produção confirmada!</a></p>
             </div>
+            <h2>Categorias</h2>
+            <button id="btn-categorias">Mostrar Categorias</button>
+            <ul id="lista-categorias"></ul>
         </main>
 
         <?php include 'html/rodape.php'; ?>

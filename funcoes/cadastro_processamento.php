@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'login' => $login,
             'senha' => $senha
         ];
-        $success = 'Cadastro realizado com sucesso! <a href="login.php">Faça login</a>';
+        $success = 'Cadastro realizado com sucesso! <a href="../html/login.php">Faça login</a>';
     }
 }
 ?>

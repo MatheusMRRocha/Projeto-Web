@@ -18,7 +18,7 @@
     <p>O update também trouxe grandes melhorias no sistema de combate, veículos e customização de personagens. A CD Projekt RED promete suporte contínuo para o jogo ao longo dos próximos anos.</p>
 
     <div style="text-align: center; margin-top: 30px;">
-        <a href="index.php">
+        <a href="../../index.php">
             <button>Voltar para a Home</button>
         </a>
     </div>

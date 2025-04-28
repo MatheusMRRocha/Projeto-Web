@@ -10,6 +10,8 @@ $categorias = [
     ["id" => 5, "nome" => "Rumores", "descricao" => "Fique por dentro dos rumores mais quentes do mercado de jogos."]
 ];
 
+header('Content-Type: application/json');
+
 // Converte o array para JSON e envia para o frontend
 echo json_encode($categorias);
 ?>

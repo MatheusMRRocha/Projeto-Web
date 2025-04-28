@@ -18,7 +18,7 @@
     <p>Esta expansão promete mais de 20 horas de conteúdo extra, novos equipamentos, desafios e missões secundárias para os jogadores explorarem.</p>
 
     <div style="text-align: center; margin-top: 30px;">
-        <a href="index.php">
+        <a href="../../index.php">
             <button>Voltar para a Home</button>
         </a>
     </div>

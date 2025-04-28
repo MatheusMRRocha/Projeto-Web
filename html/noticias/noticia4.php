@@ -18,7 +18,7 @@
     <p>Neil Druckmann, diretor criativo, afirmou que o roteiro está sendo desenvolvido com foco em temas de redenção, sobrevivência e esperança. Ainda não há previsão oficial de lançamento.</p>
 
     <div style="text-align: center; margin-top: 30px;">
-        <a href="index.php">
+        <a href="../../index.php">
             <button>Voltar para a Home</button>
         </a>
     </div>
