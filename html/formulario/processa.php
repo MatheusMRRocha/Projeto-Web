@@ -32,7 +32,7 @@
         ?>
 
         <div style="text-align: center; margin-top: 30px;">
-            <a href="index.html">
+            <a href="../../index.php">
                 <button>Voltar para a Home</button>
             </a>
         </div>

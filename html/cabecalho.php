@@ -9,6 +9,7 @@
                 <h2 class="cabecalho_links"><a href="/Projeto-Web/html/novidades.php">Novidades</a></h2>
                 <h2 class="cabecalho_links"><a href="/Projeto-Web/html/reviews.php">Reviews</a></h2>
             </div>
+
         </div>
     </section>
 </header>

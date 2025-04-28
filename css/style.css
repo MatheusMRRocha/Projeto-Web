@@ -13,7 +13,7 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* altura mínima = 100% da tela */
+    min-height: 100vh;
 }
 
 /* Cabeçalho */
@@ -59,11 +59,11 @@ html, body {
     margin: 10px;
 }
 
-/*Remove e Troca a cor dos links
+/*Remove e Troca a cor dos links*/
 a{
 	color: #ffffff;
 	text-decoration: none;
-}*/
+}
 .news-links p {
     margin: 10px 0;
 }
@@ -74,4 +74,21 @@ a{
 }
 .news-links a:hover {
     text-decoration: underline;
+}
+
+.centralizar_Conteudos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.caixa {
+    background-color: #0f006d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-align: left;
+    width: 300px;
 }
