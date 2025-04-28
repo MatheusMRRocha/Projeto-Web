@@ -11,6 +11,7 @@
 <?php include '../funcoes/cadastro_processamento.php'; ?>
 
 <div class="container">
+    <?php include 'cabecalho.php'; ?>
     <h2>Cadastro</h2>
     <form method="POST" action="">
         <label>Login:</label>
@@ -31,6 +32,7 @@
     <?php endif; ?>
 
     <p>Já tem conta? <a href="login.php">Voltar para o login</a></p>
+    <?php include 'rodape.php'; ?>
 </div>
 
 </body>
