@@ -11,7 +11,7 @@
         <?php include '../cabecalho.php'; ?>
 
         <main class="conteudo"> <h2>Dragon Age: Dreadwolf promete revolução no sistema de escolhas</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/God_of_War_Ragnarok_cover.jpg" alt="God of War Ragnarok" style="width:100%; border-radius:10px; margin-top:20px;">
+            <img src="../../img/dreadwolf.jpg" alt="DreadWolf" style="width:100%; border-radius:10px; margin-top:20px;">
             <p>A BioWare divulgou novos detalhes de Dragon Age: Dreadwolf, focando em um sistema de moralidade profunda e consequências duradouras.</p>
 
             <div style="text-align: center; margin-top: 30px;">
@@ -28,7 +28,7 @@
                     ">Voltar para a Home</button>
                 </a>
             </div>
-            </main>
+        </main>
 
         <?php include '../rodape.php'; ?> </div>
 </body>
