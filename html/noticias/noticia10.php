@@ -28,7 +28,7 @@
                     ">Voltar para a Home</button>
                 </a>
             </div>
-            </main>
+        </main>
 
         <?php include '../rodape.php'; ?> </div>
 </body>
