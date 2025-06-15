@@ -16,9 +16,7 @@
 
             <img src="../../img/godofwar.jpg" alt="God of War Ragnarok" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
 
-            <p>Santa Monica Studio surpreendeu os fãs ao anunciar "Valhalla", a nova expansão de God of War Ragnarok. A aventura traz Kratos enfrentando novas ameaças mitológicas e explorando novos reinos.</p>
-
-            <p>Esta expansão promete mais de 20 horas de conteúdo extra, novos equipamentos, desafios e missões secundárias para os jogadores explorarem.</p>
+            <p>A Santa Monica Studio pegou a comunidade de jogadores de surpresa com o lançamento inesperado de "Valhalla", uma expansão de conteúdo totalmente gratuita para God of War Ragnarök. Longe de ser apenas um pequeno extra, este DLC promete uma nova e profunda jornada para Kratos, que agora se aventura pelos misteriosos reinos de Valhalla. Enfrentando ameaças mitológicas inéditas e revisitando seu próprio passado, Kratos é desafiado a confrontar não só inimigos poderosos, mas também suas próprias reflexões em um combate que combina a brutalidade nórdica com elementos de um roguelite. Prepare-se para mais de 20 horas de conteúdo extra que expandem significativamente o universo do game. "Valhalla" oferece uma experiência envolvente, com novos equipamentos para forjar, desafios intensos que testarão suas habilidades em combate e missões secundárias que garantem horas a fio de imersão. É a chance perfeita para revisitar o aclamado mundo nórdico de God of War e aprofundar-se na saga de Kratos e Mimir, sem custo adicional para os jogadores que já possuem o jogo base. Um verdadeiro presente da Santa Monica Studio para os fãs, reafirmando o compromisso com sua comunidade.</p>
 
             <div style="text-align: center; margin-top: 30px;">
                 <a href="../../index/index.php">

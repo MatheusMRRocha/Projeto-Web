@@ -16,9 +16,9 @@
 
             <img src="../../img/Minecraft_2.jpg" alt="Minecraft 2" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
 
-            <p>Na semana passada, o criador de Minecraft "basicamente anunciou" uma sequência. Agora, ele mudou o tom.</p>
+            <p>Uma verdadeira montanha-russa de emoções para os fãs de Minecraft aconteceu nesta semana. Markus "Notch" Persson, o visionário criador do fenômeno mundial, causou um grande burburinho no último fim de semana ao "basicamente anunciar" uma sequência para o aclamado game em uma publicação casual em suas redes sociais. A notícia rapidamente se espalhou, gerando grande expectativa entre a comunidade, que sonhava com uma continuação direta do título que redefiniu o gênero sandbox.</p>
 
-            <p>O criador de Minecraft, Markus "Notch" Persson, causou um certo rebuliço no último fim de semana, ocasião em que "basicamente anunciou o Minecraft 2" de forma casual em publicação nas suas redes sociais.</p>
+            <p>No entanto, a empolgação durou pouco. Dias após a declaração inicial, Notch mudou completamente o tom, indicando que o "Minecraft 2" não seguirá em frente. Essa rápida reviravolta deixou muitos fãs confusos e curiosos sobre os motivos. Embora a Mojang e a Microsoft sejam as atuais responsáveis pela franquia, a influência de Notch ainda ressoa, e seu anúncio (e posterior "cancelamento") mostra o poder de sua voz na comunidade. Resta agora aguardar por mais esclarecimentos sobre o futuro da visão de Notch para novos projetos.</p>
 
             <div style="text-align: center; margin-top: 30px;">
                 <a href="../../index/index.php">
