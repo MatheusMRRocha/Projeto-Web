@@ -18,6 +18,12 @@ session_start();
                 <p><a href="../html/noticias/noticia2.php">FIFA 26: EA revoluciona o Modo Carreira</a></p>
                 <p><a href="../html/noticias/noticia3.php">Cyberpunk 2077: Phantom Liberty já está disponível</a></p>
                 <p><a href="../html/noticias/noticia4.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia5.php">High On Life 2: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia6.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia7.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia8.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia9.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia10.php">Dragon Age: Dreadwolf promete revolução no sistema de escolhas</a></p>
             </div>
             <h2>Categorias</h2>
             <button id="btn-categorias">Mostrar Categorias</button>

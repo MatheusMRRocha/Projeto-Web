@@ -11,7 +11,7 @@
         <?php include '../cabecalho.php'; ?>
 
         <main class="conteudo"> <h2>Dragon Age: Dreadwolf promete revolução no sistema de escolhas</h2>
-            <img src="../../img/dreadwolf.jpg" alt="DreadWolf" style="width:100%; border-radius:10px; margin-top:20px;">
+            <img src="../../img/dreadwolf.jpg" alt="DreadWolf" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
             <p>A BioWare divulgou novos detalhes de Dragon Age: Dreadwolf, focando em um sistema de moralidade profunda e consequências duradouras.</p>
 
             <div style="text-align: center; margin-top: 30px;">
