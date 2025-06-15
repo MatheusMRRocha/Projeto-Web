@@ -11,7 +11,7 @@
 <div class="container">
     <h1>The Last of Us Parte III: Produção confirmada!</h1>
 
-    <img src="https://images7.alphacoders.com/124/thumbbig-1244875.webp" alt="The Last of Us" style="width:100%; border-radius:10px; margin-top:20px;">
+    <img src="../../img/The_Last_Of_Us_Parte_II.jpg" alt="The Last of Us" style="width:100%; border-radius:10px; margin-top:20px;">
 
     <p>A Naughty Dog confirmou que The Last of Us Part III está oficialmente em produção. Poucos detalhes foram revelados, mas rumores apontam que o novo jogo trará novos personagens e aprofundará ainda mais o mundo pós-apocalíptico.</p>
 
