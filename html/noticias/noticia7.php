@@ -14,7 +14,7 @@
         <main class="conteudo">
             <h1>Minecraft 2 é cancelado dias após seu 'anúncio'!</h1>
 
-            <img src="../../img/Minecraft_2.jpg" alt="High On Life 2" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
+            <img src="../../img/Minecraft_2.jpg" alt="Minecraft 2" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
 
             <p>Na semana passada, o criador de Minecraft "basicamente anunciou" uma sequência. Agora, ele mudou o tom.</p>
 
