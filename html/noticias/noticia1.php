@@ -14,7 +14,7 @@
         <main class="conteudo">
             <h1>God of War Ragnarok: Nova expansão anunciada!</h1>
 
-            <img src="../img/godofwar.jpg" alt="God of War Ragnarok" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
+            <img src="../../img/godofwar.jpg" alt="God of War Ragnarok" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
 
             <p>Santa Monica Studio surpreendeu os fãs ao anunciar "Valhalla", a nova expansão de God of War Ragnarok. A aventura traz Kratos enfrentando novas ameaças mitológicas e explorando novos reinos.</p>
 

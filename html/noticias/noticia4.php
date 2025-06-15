@@ -9,6 +9,8 @@
 <body>
     
 <div class="container">
+    <?php include '../cabecalho.php'; ?>
+    
     <h1>The Last of Us Parte III: Produção confirmada!</h1>
 
     <img src="../../img/The_Last_Of_Us_Parte_II.jpg" alt="The Last of Us" style="width: 50%; border-radius:10px; margin-top:20px;">
@@ -22,6 +24,8 @@
             <button>Voltar para a Home</button>
         </a>
     </div>
+
+    <?php include '../rodape.php'; ?> </div>
 </div>
 
 </body>
