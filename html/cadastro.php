@@ -10,62 +10,59 @@
 
 <div class="container">
     <?php include 'cabecalho.php'; ?> <!-- Inclui o cabeçalho (se você tiver) -->
-    <h2>Cadastro de Usuário</h2>
 
-    <!-- O formulário envia para o script de processamento -->
-    <form method="POST" action="../funcoes/cadastro_processamento.php">
-        <label>Nome de Usuário:</label>
-        <input type="text" name="nome" required><br><br>
+    <div class="centralizar_Conteudos">
+        <div class="caixa">
+            <h1>Cadastro de Usuário</h1>
 
-        <label>Idade:</label>
-        <input type="number" name="idade" min="10" max="120" required><br><br>
+            <!-- O formulário envia para o script de processamento -->
+            <form method="POST" action="../funcoes/cadastro_processamento.php">
+                <label for="nome">Nome de Usuário:</label>
+                <input type="text" id="nome" name="nome" required><br>
 
-        <label>Email:</label>
-        <input type="email" name="email" required><br><br>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="10" max="120" required><br>
 
-        <label>Senha:</label>
-        <input type="password" name="senha" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
 
-        <fieldset style="margin-top: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
-            <legend style="font-weight: bold;">Deseja receber notificações por email?</legend>
-            <label><input type="radio" name="notificacoes" value="sim"> Sim</label>
-            <label><input type="radio" name="notificacoes" value="nao" checked> Não</label>
-        </fieldset><br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br>
 
-        <fieldset style="margin-top: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
-            <legend style="font-weight: bold;">Quais categorias de jogos você se interessa?</legend>
-            <small style="display: block; margin-bottom: 10px; color: #555;">Selecione uma ou mais opções para receber novidades.</small>
+                <fieldset>
+                    <legend><strong>Deseja receber notificações por email?</strong></legend>
+                    <label><input type="radio" name="notificacoes" value="sim"> Sim</label>
+                    <label><input type="radio" name="notificacoes" value="nao" checked> Não</label>
+                </fieldset>
 
-            <label style="display: block; margin-bottom: 5px;"><input type="checkbox" name="categorias[]" value="Ação"> Ação</label>
-            <label style="display: block; margin-bottom: 5px;"><input type="checkbox" name="categorias[]" value="Esportes"> Esportes</label>
-            <label style="display: block; margin-bottom: 5px;"><input type="checkbox" name="categorias[]" value="RPG"> RPG</label>
-            <label style="display: block; margin-bottom: 5px;"><input type="checkbox" name="categorias[]" value="Corrida"> Corrida</label>
-            <label style="display: block;"><input type="checkbox" name="categorias[]" value="Terror"> Terror</label>
-        </fieldset><br>
+                <fieldset>
+                    <legend><strong>Quais categorias de jogos você se interessa?</strong></legend>
+                    <small style="display: block; margin-bottom: 10px; color: #555;">Selecione uma ou mais opções para receber novidades.</small>
 
-        <button type="submit" style="
-            background-color: #4CAF50; /* Green */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        ">Cadastrar</button>
-    </form>
+                    <label><input type="checkbox" name="categorias[]" value="Ação"> Ação</label>
+                    <label><input type="checkbox" name="categorias[]" value="Esportes"> Esportes</label>
+                    <label><input type="checkbox" name="categorias[]" value="RPG"> RPG</label>
+                    <label><input type="checkbox" name="categorias[]" value="Corrida"> Corrida</label>
+                    <label><input type="checkbox" name="categorias[]" value="Terror"> Terror</label>
+                </fieldset>
 
-    <?php
-    // Exibe mensagens de sucesso ou erro que vêm via parâmetros GET do script de processamento
-    if (isset($_GET['success'])) {
-        echo '<p class="success" style="color: green; font-weight: bold; margin-top: 20px;">' . htmlspecialchars($_GET['success']) . '</p>';
-    }
-    if (isset($_GET['error'])) {
-        echo '<p class="error" style="color: red; font-weight: bold; margin-top: 20px;">' . htmlspecialchars($_GET['error']) . '</p>';
-    }
-    ?>
+                <button type="submit">Cadastrar</button>
+            </form>
 
-    <p style="margin-top: 20px;">Já tem conta? <a href="login.php" style="color: #007bff; text-decoration: none;">Voltar para o login</a></p>
+            <?php
+            // Exibe mensagens de sucesso ou erro que vêm via parâmetros GET do script de processamento
+            if (isset($_GET['success'])) {
+                echo '<p class="success">' . htmlspecialchars($_GET['success']) . '</p>';
+            }
+            if (isset($_GET['error'])) {
+                echo '<p class="error">' . htmlspecialchars($_GET['error']) . '</p>';
+            }
+            ?>
+
+            <p style="text-align: center; margin-top: 20px;">Já tem conta? <a href="login.php">Voltar para o login</a></p>
+        </div>
+    </div>
+
     <?php include 'rodape.php'; ?> <!-- Inclui o rodapé (se você tiver) -->
 </div>
 </body>
