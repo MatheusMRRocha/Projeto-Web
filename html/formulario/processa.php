@@ -11,12 +11,10 @@
         <h1>Resultado</h1>
 
 <?php
-// Inclua o arquivo de conexão com o banco de dados
-require 'conexao.php'; // Certifique-se de que o caminho para seu 'conexao.php' está correto
+require 'conexao.php';
 
-$mensagem_processamento = ''; // Variável para armazenar mensagens de sucesso/erro do banco
+$mensagem_processamento = '';
 
-// Verifica se o formulário foi enviado por POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<h2>Dados recebidos (POST):</h2>";
 
@@ -41,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Nenhuma categoria selecionada.<br>";
     }
 
-    // --- Lógica de inserção no banco de dados ---
     try {
         // 1. Insere os dados do usuário na tabela 'usuarios'
         $stmt_usuario = $pdo->prepare("INSERT INTO usuarios (nome, email, mensagem) VALUES (:nome, :email, :mensagem)");
@@ -78,13 +75,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } catch (PDOException $e) {
         // Se o erro for de violação de UNIQUE (ex: email já cadastrado), você pode personalizar a mensagem
-        if ($e->getCode() == '23505') { // Código de erro para violação de restrição UNIQUE no PostgreSQL
+        if ($e->getCode() == '23505') {
             $mensagem_processamento = '<p style="color: red;">Erro: Este email já está cadastrado. Por favor, use outro.</p>';
         } else {
             $mensagem_processamento = '<p style="color: red;">Erro ao salvar dados no banco: ' . $e->getMessage() . '</p>';
         }
     }
-    // --- Fim da lógica de inserção ---
 
     echo $mensagem_processamento; // Exibe a mensagem de sucesso ou erro do banco
 
@@ -97,7 +93,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["busca"])) {
     $busca = htmlspecialchars($_GET["busca"]);
     echo "Você buscou por: <strong>" . $busca . "</strong><br>";
 
-    // Exemplo de busca no banco para usuários/contatos
     try {
         // Ajuste a consulta conforme as colunas da sua tabela 'usuarios'
         $stmt_busca = $pdo->prepare("SELECT id, nome, email FROM usuarios WHERE nome ILIKE :busca OR email ILIKE :busca OR mensagem ILIKE :busca");

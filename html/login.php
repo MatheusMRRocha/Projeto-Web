@@ -26,7 +26,6 @@
             </form>
 
             <?php
-            // Exibe mensagens de sucesso ou erro que vêm via parâmetros GET do script de processamento
             if (isset($_GET['success'])) {
                 echo '<p class="success">' . htmlspecialchars($_GET['success']) . '</p>';
             }
@@ -42,15 +41,9 @@
     <?php include 'rodape.php'; ?>
 
     <script>
-        // Este script verifica se há um parâmetro 'success' na URL após o processamento do login.
-        // Se houver, ele redireciona o usuário para a página inicial.
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('success')) {
-            // Um pequeno atraso (opcional) para que a mensagem de sucesso seja brevemente visível.
             setTimeout(() => {
-                // Redireciona para a página principal (index.php)
-                // O caminho '../index/index.php' assume que index.php está em uma pasta 'index'
-                // no mesmo nível da pasta 'html' (onde login.php está).
                 window.location.href = '../index/index.php';
             }, 1500); // Redireciona após 1.5 segundos
         }

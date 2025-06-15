@@ -1,6 +1,5 @@
 <?php
-// É fundamental iniciar a sessão em qualquer arquivo que use ou precise verificar o status da sessão.
-// A verificação 'session_status() == PHP_SESSION_NONE' impede erros caso session_start() já tenha sido chamado.
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -9,25 +8,20 @@ if (session_status() == PHP_SESSION_NONE) {
 $logado = isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
 $nome_usuario = $logado ? htmlspecialchars($_SESSION['user_name']) : 'Visitante';
 
-// Define o caminho base do seu projeto.
-// Isso é útil para links e recursos (como imagens e CSS) para garantir que funcionem
-// independentemente de onde o arquivo PHP está sendo executado.
-// Ajuste 'Projeto-Web' se o nome da sua pasta raiz for diferente no servidor.
 $base_url = '/Projeto-Web/';
 ?>
 
 <header class="cabecalho">
-    <!-- A logo e o nome do site ficam à esquerda -->
+
     <div class="logo_nome">
         <img src="<?php echo $base_url; ?>img/logo.png" alt="Logo do Portal">
         <h1>Game News</h1>
     </div>
 
-    <!-- Os links de navegação e a seção de perfil/login ficam à direita -->
+    
     <div class="cabecalho_links">
         <h2><a href="<?php echo $base_url; ?>index/index.php">Home</a></h2>
         <h2><a href="<?php echo $base_url; ?>html/novidades.php">Novidades</a></h2>
-        <h2><a href="<?php echo $base_url; ?>html/reviews.php">Reviews</a></h2>
 
         <?php if ($logado): // Se o usuário estiver logado ?>
             <div class="perfil-dropdown">

@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="../css/style.css"> <!-- Ajuste o caminho para seu CSS -->
+    <link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body>
 
 <div class="container">
-    <?php include 'cabecalho.php'; ?> <!-- Inclui o cabeçalho (se você tiver) -->
+    <?php include 'cabecalho.php'; ?>
 
     <div class="centralizar_Conteudos">
         <div class="caixa">
             <h1>Cadastro de Usuário</h1>
 
-            <!-- O formulário envia para o script de processamento -->
             <form method="POST" action="../funcoes/cadastro_processamento.php">
                 <label for="nome">Nome de Usuário:</label>
                 <input type="text" id="nome" name="nome" required><br>
@@ -50,7 +49,7 @@
             </form>
 
             <?php
-            // Exibe mensagens de sucesso ou erro que vêm via parâmetros GET do script de processamento
+
             if (isset($_GET['success'])) {
                 echo '<p class="success">' . htmlspecialchars($_GET['success']) . '</p>';
             }
@@ -63,7 +62,7 @@
         </div>
     </div>
 
-    <?php include 'rodape.php'; ?> <!-- Inclui o rodapé (se você tiver) -->
+    <?php include 'rodape.php'; ?>
 </div>
 </body>
 </html>

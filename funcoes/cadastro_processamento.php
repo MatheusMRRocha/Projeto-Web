@@ -1,7 +1,5 @@
 <?php
 // Inclui o arquivo de conexão com o banco de dados.
-// O caminho '../conexao_com_banco/conexao.php' assume que este arquivo PHP está em 'funcoes/',
-// e 'conexao.php' está dentro de uma pasta 'conexao_com_banco' no diretório raiz do seu projeto.
 require '../conexao_com_banco/conexao.php';
 
 // --- Funções Auxiliares para Redirecionamento e Feedback ---
