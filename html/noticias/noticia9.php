@@ -13,7 +13,7 @@
 
         <main class="conteudo">
         <h2>Baldur’s Gate 3 ganha prêmios de Melhor RPG do Ano</h2>
-        <img src="../../img/baldursgate3.jpg" alt="" style="width:100%; border-radius:10px; margin-top:20px;">
+        <img src="../../img/baldursgate3.jpg" alt="" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
         <p>Baldur’s Gate 3 foi consagrado com o prêmio de Melhor RPG de 2024, elogiado por sua narrativa, combate tático e liberdade de escolhas.</p>
         <p>O jogo da Larian Studios impressionou com a profundidade de seus personagens, a complexidade de suas missões e o impacto real das decisões do jogador na trama.</p>
         <p>Com um vasto mundo a ser explorado e centenas de horas de conteúdo, Baldur's Gate 3 redefiniu o gênero de RPGs ocidentais com sua abordagem imersiva e responsiva.</p>
