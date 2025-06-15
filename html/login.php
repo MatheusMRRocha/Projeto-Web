@@ -40,6 +40,7 @@
     ?>
 
     <p style="margin-top: 20px;">Não tem conta? <a href="cadastro.php" style="color: #007bff; text-decoration: none;">Cadastre-se aqui</a></p>
-    <?php include 'rodape.php'; ?> </div>
+    <?php include 'rodape.php'; ?> 
+</div>
 </body>
 </html>
