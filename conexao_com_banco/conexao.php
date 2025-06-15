@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost'; 
-$db = 'your_database_name';
-$user = 'your_username'; 
-$pass = 'your_password'; 
+$db = 'banco_de_dados_web';
+$user = 'postegres'; 
+$pass = '123456'; 
 $port = '5432'; 
 
 $dsn = "pgsql:host=$host;port=$port;dbname=$db";

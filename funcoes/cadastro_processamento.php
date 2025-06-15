@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php'; 
+require '../conexao_com_banco/conexao.php'; 
 
 $error = '';
 $success = '';
