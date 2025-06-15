@@ -1,5 +1,7 @@
 <?php
-session_start(); // Inicia a sessão PHP no início do script
+// Inicia a sessão PHP NO INÍCIO do script.
+// É crucial que esta seja a primeira coisa a ser executada em scripts que usam sessões.
+session_start();
 
 // Inclui o arquivo de conexão com o banco de dados.
 require '../conexao_com_banco/conexao.php'; // Ajuste o caminho conforme necessário
@@ -15,14 +17,17 @@ function redirectLoginWithError($message) {
 
 /**
  * Redireciona o usuário para uma página de sucesso após o login.
- * @param string $page O caminho para a página de sucesso (ex: 'dashboard.php').
+ * Neste caso, para a página inicial (Home).
+ * @param string $page O caminho para a página de sucesso (ex: 'index.php').
  */
 function redirectLoginSuccess($page) {
-    header("Location: ../html/" . $page); // Redireciona para a página do usuário logado
+    // Redireciona para sua Home, que está na raiz do Projeto-Web
+    header("Location: /Projeto-Web/" . $page);
     exit();
 }
 
 // Verifica se a requisição HTTP foi feita usando o método POST.
+// Isso impede que o script processe login se for acessado diretamente sem um formulário.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 1. Coleta e sanitiza os dados do formulário de login.
     $login_input = trim($_POST['login_input'] ?? ''); // Pode ser email ou nome de usuário
@@ -36,21 +41,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 3. Busca o usuário no banco de dados por nome de usuário OU email.
     try {
         // Prepara a consulta SQL para buscar o usuário pelo nome OU email.
+        // LIMIT 1 é uma boa prática para consultas de login, pois esperamos apenas um usuário.
         $stmt = $pdo->prepare("SELECT id, nome, email, senha FROM usuarios WHERE nome = :login_input OR email = :login_input LIMIT 1");
         $stmt->execute([':login_input' => $login_input]);
         $usuario = $stmt->fetch(); // Tenta buscar o usuário
 
-        // 4. Verifica se o usuário foi encontrado e se a senha está correta.
+        // 4. Verifica se o usuário foi encontrado E se a senha está correta.
+        // password_verify() é a função correta para comparar a senha digitada com o hash armazenado.
         if ($usuario && password_verify($senha_digitada, $usuario['senha'])) {
             // Login bem-sucedido!
+
+            // Regenera o ID da sessão para prevenir Session Fixation Attack (boa prática de segurança).
+            session_regenerate_id(true);
+
             // Armazena informações do usuário na sessão.
             $_SESSION['user_id'] = $usuario['id'];
             $_SESSION['user_name'] = $usuario['nome'];
             $_SESSION['user_email'] = $usuario['email'];
             $_SESSION['logged_in'] = true; // Flag para indicar que o usuário está logado
 
-            // Redireciona para a página do dashboard/bem-vindo.
-            redirectLoginSuccess('dashboard.php'); // Redireciona para sua página de "bem-vindo"
+            // Redireciona para a página inicial (Home).
+            redirectLoginSuccess('index.php'); // Redireciona para a Home do seu site
 
         } else {
             // Usuário não encontrado ou senha incorreta.
@@ -59,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } catch (PDOException $e) {
         // Em caso de erro no banco de dados durante o login.
+        // Registra o erro detalhado no log do PHP para depuração (NÃO expor ao usuário em produção).
         error_log("Erro de login no banco de dados: " . $e->getMessage() . " - SQLState: " . $e->getCode());
         redirectLoginWithError("Ocorreu um erro ao tentar fazer login. Por favor, tente novamente mais tarde.");
     }
