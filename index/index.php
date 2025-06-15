@@ -22,7 +22,7 @@ session_start();
                 <p><a href="../html/noticias/noticia6.php">The Last of Us Parte III: Produção confirmada!</a></p>
                 <p><a href="../html/noticias/noticia7.php">Minecraft 2 é cancelado dias após seu 'anúncio'!</a></p>
                 <p><a href="../html/noticias/noticia8.php">The Last of Us Parte III: Produção confirmada!</a></p>
-                <p><a href="../html/noticias/noticia9.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia9.php">Baldur’s Gate 3 ganha prêmios de Melhor RPG do Ano!</a></p>
                 <p><a href="../html/noticias/noticia10.php">Dragon Age: Dreadwolf promete revolução no sistema de escolhas</a></p>
             </div>
             <h2>Categorias</h2>
