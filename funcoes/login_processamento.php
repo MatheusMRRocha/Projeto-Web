@@ -1,4 +1,8 @@
 <?php
+// Inicia o buffer de saída. Isso garante que nenhum conteúdo seja enviado ao navegador
+// antes que todos os cabeçalhos (incluindo redirecionamentos) sejam processados.
+ob_start();
+
 // Inicia a sessão PHP NO INÍCIO do script.
 // É crucial que esta seja a primeira coisa a ser executada em scripts que usam sessões.
 session_start();
@@ -12,17 +16,22 @@ require '../conexao_com_banco/conexao.php'; // Ajuste o caminho conforme necess�
  */
 function redirectLoginWithError($message) {
     header("Location: ../html/login.php?error=" . urlencode($message));
+    // Certifica-se de que o buffer de saída é esvaziado e as saídas são enviadas.
+    ob_end_flush(); 
     exit();
 }
 
 /**
  * Redireciona o usuário para uma página de sucesso após o login.
- * Neste caso, para a página inicial (Home).
- * @param string $page O caminho para a página de sucesso (ex: 'index.php').
+ * Neste caso, para a página inicial (Home), usando o caminho correto.
+ * @param string $page O caminho para a página de sucesso (ex: 'index/index.php').
  */
 function redirectLoginSuccess($page) {
-    // Redireciona para sua Home, que está na raiz do Projeto-Web
+    // Redireciona para sua Home, que está em '/Projeto-Web/index/index.php'
+    // O $base_url seria '/Projeto-Web/', e a página 'index/index.php'.
     header("Location: /Projeto-Web/" . $page);
+    // Certifica-se de que o buffer de saída é esvaziado e as saídas são enviadas.
+    ob_end_flush();
     exit();
 }
 
@@ -60,8 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_email'] = $usuario['email'];
             $_SESSION['logged_in'] = true; // Flag para indicar que o usuário está logado
 
-            // Redireciona para a página inicial (Home).
-            redirectLoginSuccess('index.php'); // Redireciona para a Home do seu site
+            // Redireciona para a página inicial (Home) com o caminho CORRETO.
+            redirectLoginSuccess('index/index.php'); // Redireciona para a Home do seu site
 
         } else {
             // Usuário não encontrado ou senha incorreta.

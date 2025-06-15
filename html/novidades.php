@@ -27,7 +27,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/godofwar.jpg" alt="God of War Ragnarok" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/godofwar.jpg" alt="God of War Ragnarok" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">God of War Ragnarok: Nova expansão anunciada!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">A Santa Monica Studio surpreendeu os fãs ao anunciar "Valhalla", a nova expansão que traz Kratos de volta à ação...</p>
@@ -52,7 +52,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/fifa26.jpg" alt="FIFA 26" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/fifa26.jpg" alt="FIFA 26" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">FIFA 26: EA revoluciona o Modo Carreira</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">A Electronic Arts promete mudanças drásticas no Modo Carreira, com maior imersão e opções de gerenciamento...</p>
@@ -77,7 +77,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/cyberpun2077.jpg" alt="Cyberpunk 2077" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/cyberpun2077.jpg" alt="Cyberpunk 2077" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">Phantom Liberty: Cyberpunk 2077 já está disponível!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">A tão aguardada expansão Phantom Liberty já pode ser baixada, trazendo uma nova história e personagens...</p>
@@ -102,7 +102,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/The_Last_Of_Us_Parte_II.jpg" alt="The Last of Us Parte III" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/The_Last_Of_Us_Parte_II.jpg" alt="The Last of Us Parte III" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">The Last of Us Parte III: Produção confirmada!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">A Naughty Dog finalmente confirmou que a produção de The Last of Us Parte III está em andamento...</p>
@@ -127,7 +127,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/baldursgate3.jpg" alt="Baldur's Gate 3" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/baldursgate3.jpg" alt="Baldur's Gate 3" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">Baldur's Gate 3: Consagrado o Melhor RPG de 2024!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">Baldur’s Gate 3 foi consagrado com o prêmio de Melhor RPG de 2024, elogiado por sua narrativa...</p>
@@ -152,7 +152,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/forzahorizon.jpg" alt="Forza Horizon 6 Brazil" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/forzahorizon.jpg" alt="Forza Horizon 6 Brazil" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">Forza Horizon 6: Brasil como Mapa Confirmado!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">A Playground Games confirmou que Forza Horizon 6 terá como mapa o Brasil, com cidades, florestas...</p>
@@ -177,7 +177,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/dreadwolf.jpg" alt="Dragon Age: Dreadwolf" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/dreadwolf.jpg" alt="Dragon Age: Dreadwolf" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">Dragon Age: Dreadwolf promete revolução no sistema de escolhas</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">O novo título da BioWare promete revolucionar o sistema de escolhas e moralidade, trazendo uma experiência imersiva...</p>
@@ -202,7 +202,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/High_On_Life_2.jpg" alt="High On Life 2" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/High_On_Life_2.jpg" alt="High On Life 2" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">High On Life 2 Anunciado com Mais Humor e Ação!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">A sequência do irreverente jogo de tiro humorístico foi oficialmente anunciada, prometendo novas mecânicas...</p>
@@ -227,7 +227,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/minecraft_2.jpg" alt="Minecraft 2" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/minecraft_2.jpg" alt="Minecraft 2" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">Minecraft 2: Anúncio Gera Expectativa Apesar de Cancelamento</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">Apesar do recente cancelamento do projeto de Minecraft 2, o mero anúncio gerou grande expectativa...</p>
@@ -252,7 +252,7 @@
                     overflow: hidden;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 ">
-                    <img src="../../index/img/Titanfall_3.jpg" alt="Titanfall 3" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
+                    <img src="../img/Titanfall_3.jpg" alt="Titanfall 3" style="width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #eee;">
                     <div style="padding: 20px;">
                         <h3 style="color: #1a237e; font-size: 1.4em; margin-bottom: 10px;">Titanfall 3: CEO da Respawn Deixa Fãs Esperançosos!</h3>
                         <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">Embora ainda não confirmado, o CEO da Respawn Entertainment, Vince Zampella, deixou os fãs esperançosos...</p>
