@@ -19,7 +19,7 @@ session_start();
                 <p><a href="../html/noticias/noticia3.php">Cyberpunk 2077: Phantom Liberty já está disponível</a></p>
                 <p><a href="../html/noticias/noticia4.php">The Last of Us Parte III: Produção confirmada!</a></p>
                 <p><a href="../html/noticias/noticia5.php">High On Life 2: Produção confirmada!</a></p>
-                <p><a href="../html/noticias/noticia6.php">The Last of Us Parte III: Produção confirmada!</a></p>
+                <p><a href="../html/noticias/noticia6.php">Titanfall 3 pode acontecer "na hora certa", diz CEO da Respawn.</a></p>
                 <p><a href="../html/noticias/noticia7.php">Minecraft 2 é cancelado dias após seu 'anúncio'!</a></p>
                 <p><a href="../html/noticias/noticia8.php">The Last of Us Parte III: Produção confirmada!</a></p>
                 <p><a href="../html/noticias/noticia9.php">Baldur’s Gate 3 ganha prêmios de Melhor RPG do Ano!</a></p>

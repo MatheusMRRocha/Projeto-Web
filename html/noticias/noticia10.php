@@ -15,7 +15,7 @@
             <p>A BioWare divulgou novos detalhes de Dragon Age: Dreadwolf, focando em um sistema de moralidade profunda e consequências duradouras.</p>
 
             <div style="text-align: center; margin-top: 30px;">
-                <a href="../../index/index.php"">
+                <a href="../../index/index.php">
                     <button style="
                         background-color: #3f51b5; /* Azul do seu tema */
                         color: white;
