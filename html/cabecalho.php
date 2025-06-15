@@ -13,102 +13,57 @@ $nome_usuario = $logado ? htmlspecialchars($_SESSION['user_name']) : 'Visitante'
 // Isso é útil para links e recursos (como imagens e CSS) para garantir que funcionem
 // independentemente de onde o arquivo PHP está sendo executado.
 // Ajuste 'Projeto-Web' se o nome da sua pasta raiz for diferente no servidor.
-$base_url = '/Projeto-Web/'; 
+$base_url = '/Projeto-Web/';
 ?>
 
-<header class="cabecalho" style="
-    /* Esses estilos inline são apenas exemplos rápidos para testar. */
-    /* Mova-os para seu arquivo CSS (../css/style.css) para melhor organização. */
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-">
-    <section>
-        <div id="cabecalho" style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%; /* Garante que o conteúdo ocupe o espaço disponível */
-        ">
-            <div class="logo_nome" style="display: flex; align-items: center;">
-                <!-- Caminho corrigido para a logo usando $base_url -->
-                <img src="<?php echo $base_url; ?>img/logo.png" alt="Logo do Portal" style="height: 50px; margin-right: 15px;">
-                <h1 class="logo_nome" style="font-size: 24px; margin: 0;">Game News</h1>
+<header class="cabecalho">
+    <!-- A logo e o nome do site ficam à esquerda -->
+    <div class="logo_nome">
+        <img src="<?php echo $base_url; ?>img/logo.png" alt="Logo do Portal">
+    </div>
+
+    <!-- Os links de navegação e a seção de perfil/login ficam à direita -->
+    <div class="cabecalho_links">
+        <h2><a href="<?php echo $base_url; ?>index/index.php">Home</a></h2>
+        <h2><a href="<?php echo $base_url; ?>html/novidades.php">Novidades</a></h2>
+        <h2><a href="<?php echo $base_url; ?>html/reviews.php">Reviews</a></h2>
+
+        <?php if ($logado): // Se o usuário estiver logado ?>
+            <div class="perfil-dropdown">
+                <button class="perfil-btn">
+                    <img src="<?php echo $base_url; ?>img/logo.png" alt="Ícone de Perfil">
+                    <span>Olá, <?php echo $nome_usuario; ?></span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="<?php echo $base_url; ?>html/dashboard.php">Dashboard</a>
+                    <a href="<?php echo $base_url; ?>html/perfil.php">Meu Perfil</a>
+                    <a href="<?php echo $base_url; ?>html/minhas_categorias.php">Minhas Categorias</a>
+                    <a href="<?php echo $base_url; ?>funcoes/logout.php">Sair</a>
+                </div>
             </div>
 
-            <div class="cabecalho_links" style="display: flex; align-items: center; gap: 20px;">
-                <!-- Links corrigidos usando $base_url para garantir consistência -->
-                <h2 class="cabecalho_links" style="margin: 0;"><a href="<?php echo $base_url; ?>index/index.php" style="color: white; text-decoration: none;">Home</a></h2>
-                <h2 class="cabecalho_links" style="margin: 0;"><a href="<?php echo $base_url; ?>html/novidades.php" style="color: white; text-decoration: none;">Novidades</a></h2>
-                <h2 class="cabecalho_links" style="margin: 0;"><a href="<?php echo $base_url; ?>html/reviews.php" style="color: white; text-decoration: none;">Reviews</a></h2>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const perfilDropdown = document.querySelector('.perfil-dropdown');
+                    const dropdownContent = perfilDropdown.querySelector('.dropdown-content');
+                    const perfilBtn = perfilDropdown.querySelector('.perfil-btn');
 
-                <?php if ($logado): // Se o usuário estiver logado ?>
-                    <div class="perfil-dropdown" style="position: relative; display: inline-block;">
-                        <button class="perfil-btn" style="
-                            background: none;
-                            border: none;
-                            color: white;
-                            font-size: 16px;
-                            cursor: pointer;
-                            display: flex;
-                            align-items: center;
-                            gap: 8px; /* Espaço entre ícone e texto */
-                        ">
-                            <!-- Caminho corrigido para o ícone de perfil usando $base_url -->
-                            <img src="<?php echo $base_url; ?>img/logo.png" alt="Ícone de Perfil" style="border-radius: 50%; width: 40px; height: 40px; object-fit: cover;">
-                            <span style="font-weight: bold;">Olá, <?php echo $nome_usuario; ?></span>
-                        </button>
-                        <div class="dropdown-content" style="
-                            display: none; /* Escondido por padrão */
-                            position: absolute;
-                            background-color: #f9f9f9;
-                            min-width: 180px;
-                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                            z-index: 1000; /* Garante que o dropdown fique acima de outros elementos */
-                            right: 0; /* Alinha o dropdown à direita do botão */
-                            border-radius: 5px;
-                            overflow: hidden;
-                            top: 100%; /* Posiciona abaixo do botão */
-                            margin-top: 10px; /* Pequeno espaçamento do botão */
-                        ">
-                            <!-- Links corrigidos dentro do dropdown usando $base_url -->
-                            <a href="<?php echo $base_url; ?>html/dashboard.php" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Dashboard</a>
-                            <a href="<?php echo $base_url; ?>html/perfil.php" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Meu Perfil</a>
-                            <a href="<?php echo $base_url; ?>html/minhas_categorias.php" style="color: black; padding: 12px 16px; text-decoration: none; display: block;">Minhas Categorias</a>
-                            <a href="<?php echo $base_url; ?>funcoes/logout.php" style="color: black; padding: 12px 16px; text-decoration: none; display: block; border-top: 1px solid #eee;">Sair</a>
-                        </div>
-                    </div>
+                    perfilBtn.addEventListener('click', function(event) {
+                        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                        event.stopPropagation();
+                    });
 
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const perfilDropdown = document.querySelector('.perfil-dropdown');
-                            const dropdownContent = perfilDropdown.querySelector('.dropdown-content');
-                            const perfilBtn = perfilDropdown.querySelector('.perfil-btn');
+                    window.addEventListener('click', function(event) {
+                        if (!perfilDropdown.contains(event.target)) {
+                            dropdownContent.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
 
-                            perfilBtn.addEventListener('click', function(event) {
-                                // Alterna a visibilidade do dropdown
-                                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-                                event.stopPropagation(); // Impede que o clique se propague e feche o dropdown imediatamente
-                            });
-
-                            // Fecha o dropdown se clicar em qualquer lugar fora dele
-                            window.addEventListener('click', function(event) {
-                                if (!perfilDropdown.contains(event.target)) {
-                                    dropdownContent.style.display = 'none';
-                                }
-                            });
-                        });
-                    </script>
-
-                <?php else: // Se o usuário NÃO estiver logado ?>
-                    <!-- Links corrigidos para login e cadastro usando $base_url -->
-                    <h3 class="cabecalho_links" style="margin: 0;"><a href="<?php echo $base_url; ?>html/login.php" style="color: white; text-decoration: none;">Login</a></h3>
-                    <h3 class="cabecalho_links" style="margin: 0;"><a href="<?php echo $base_url; ?>html/cadastro.php" style="color: white; text-decoration: none;">Cadastro</a></h3>
-                <?php endif; ?>
-            </div>
-        </div>
-    </section>
+        <?php else: // Se o usuário NÃO estiver logado ?>
+            <h3><a href="<?php echo $base_url; ?>html/login.php">Login</a></h3>
+            <h3><a href="<?php echo $base_url; ?>html/cadastro.php">Cadastro</a></h3>
+        <?php endif; ?>
+    </div>
 </header>

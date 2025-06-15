@@ -38,16 +38,17 @@ html, body {
     align-items: center; /* Alinha tudo verticalmente ao centro */
     flex-shrink: 0; /* Impede que o cabeçalho encolha */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada para destaque */
+    width: 100%; /* Garante que o cabeçalho ocupe a largura total */
 }
 
-/* Elementos do Cabeçalho */
+/* Elementos do Cabeçalho - Logo e Nome do Site */
 .logo_nome {
     display: flex;
     align-items: center;
     gap: 15px; /* Espaçamento entre a logo e o texto */
 }
 .logo_nome img {
-    height: 60px; /* Logo um pouco maior */
+    height: 110px; /* Logo um pouco maior */
     width: auto; /* Mantém proporções */
     border-radius: 50%; /* Faz a logo parecer um distintivo ou medalhão */
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra para a logo */
@@ -60,7 +61,7 @@ html, body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra leve no texto do logo */
 }
 
-/* Links de Navegação do Cabeçalho */
+/* Links de Navegação do Cabeçalho e Área do Usuário */
 .cabecalho_links {
     display: flex; /* Transforma em flex para controle total dos links */
     align-items: center;
