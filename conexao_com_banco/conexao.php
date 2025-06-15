@@ -3,7 +3,7 @@
 // Detalhes de conexão com o banco de dados PostgreSQL
 $host = 'localhost';             // Onde seu servidor PostgreSQL está rodando
 $db = 'banco_de_dados_web';      // Nome do seu banco de dados
-$user = 'postegres';             // SEU nome de usuário do PostgreSQL
+$user = 'postgres';             // SEU nome de usuário do PostgreSQL
 $pass = '123456';                // SUA senha do usuário do PostgreSQL
 $port = '5432';                  // A porta padrão do PostgreSQL
 
