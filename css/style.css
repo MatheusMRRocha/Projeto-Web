@@ -110,19 +110,8 @@ html, body {
 }
 
 /* Estilos para Notícias/Links no Conteúdo */
-.news-links p {
-    margin: 12px 0; /* Espaçamento aprimorado entre parágrafos de notícias */
-}
-.news-links a {
-    text-decoration: none;
-    font-size: 1.15em; /* Notícias um pouco maiores */
-    color: #424242; /* Cor mais neutra para os links de notícias */
-    transition: color 0.3s ease; /* Transição suave na cor */
-}
-.news-links a:hover {
-    color: #3f51b5; /* Cor mais vibrante no hover (azul do cabeçalho) */
-    text-decoration: underline;
-}
+/* Removido o estilo .news-links p e .news-links a porque a nova estrutura usa .news-carousel-container */
+/* e .news-carousel-slide a */
 
 /* Centralização de Conteúdos (para formulários, etc.) */
 .centralizar_Conteudos {
@@ -328,4 +317,67 @@ html, body {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Novos estilos para o Carrossel de Notícias na Home --- */
+.news-carousel-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Esconde os slides que estão fora da visão */
+    position: relative; /* Para posicionar os controles (se adicionarmos JS) */
+}
+
+.news-carousel-wrapper {
+    overflow-x: auto; /* Permite rolagem horizontal */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave em dispositivos iOS */
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+}
+
+.news-carousel-wrapper::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem em navegadores WebKit */
+}
+
+.news-carousel-slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap; /* Evita que os slides quebrem para a próxima linha */
+    transition: transform 0.5s ease-in-out; /* Transição suave para o movimento (com JS) */
+    display: inline-flex; /* Coloca os slides lado a lado */
+}
+
+.news-carousel-slide {
+    flex: 0 0 auto; /* Não encolhe, não estica, largura automática */
+    padding: 15px 20px;
+    border-right: 1px solid #eee;
+    min-width: 280px; /* Largura mínima para cada slide no carrossel */
+    max-width: 350px; /* Largura máxima para cada slide */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+.news-carousel-slide:last-child {
+    border-right: none;
+}
+
+.news-carousel-slide a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.news-carousel-slide a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.news-carousel-container h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
