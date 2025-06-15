@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>God of War Ragnarok: Nova expansão anunciada!</title>
+    <title>High On Life 2: Squach Games anuncia continuação após 3 anos!</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <?php include '../cabecalho.php'; ?>
 
         <main class="conteudo">
-            <h1>God of War Ragnarok: Nova expansão anunciada!</h1>
+            <h1>High On Life 2: Squach Games anuncia continuação após 3 anos!</h1>
 
             <img src="../../img/High_On_Life_2.jpg" alt="High On Life 2" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
 
