@@ -14,9 +14,8 @@
         <main class="conteudo">
         <h2>Baldur’s Gate 3 ganha prêmios de Melhor RPG do Ano</h2>
         <img src="../../img/baldursgate3.jpg" alt="" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
-        <p>Baldur’s Gate 3 foi consagrado com o prêmio de Melhor RPG de 2024, elogiado por sua narrativa, combate tático e liberdade de escolhas.</p>
-        <p>O jogo da Larian Studios impressionou com a profundidade de seus personagens, a complexidade de suas missões e o impacto real das decisões do jogador na trama.</p>
-        <p>Com um vasto mundo a ser explorado e centenas de horas de conteúdo, Baldur's Gate 3 redefiniu o gênero de RPGs ocidentais com sua abordagem imersiva e responsiva.</p>
+        <p>Confirmando seu status de fenômeno global, Baldur's Gate 3 foi amplamente consagrado com o prestigiado prêmio de Melhor RPG do Ano. Desenvolvido pela aclamada Larian Studios, o título recebeu aclamação unânime por diversos motivos, destacando-se por sua narrativa envolvente, um sistema de combate tático profundo e, principalmente, pela incrível liberdade de escolhas oferecida aos jogadores. Esse reconhecimento solidifica a posição do jogo como um marco na indústria.</p>
+        <p>O que mais impressionou críticos e jogadores foi a profundidade dos personagens, cada um com suas próprias motivações e histórias complexas. As missões de Baldur's Gate 3 são intrincadas e suas ramificações levam a um impacto real e significativo das decisões do jogador na trama principal, criando uma experiência verdadeiramente única a cada jogada. Com um vasto mundo a ser explorado e centenas de horas de conteúdo de alta qualidade, o game não apenas redefiniu o gênero de RPGs ocidentais, mas também elevou o patamar com sua abordagem imersiva e responsiva, mostrando o que é possível quando a paixão e a inovação se encontram.</p>
 
             <div style="text-align: center; margin-top: 30px;">
                 <a href="../../index/index.php">
