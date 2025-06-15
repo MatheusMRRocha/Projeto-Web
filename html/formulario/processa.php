@@ -44,8 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // --- Lógica de inserção no banco de dados ---
     try {
         // 1. Insere os dados do usuário na tabela 'usuarios'
-        // Adicione aqui as outras colunas da sua tabela 'usuarios' se houver (ex: idade, senha)
-        // Para este formulário de contato, estamos usando nome, email, e mensagem como campos do "usuário"
         $stmt_usuario = $pdo->prepare("INSERT INTO usuarios (nome, email, mensagem) VALUES (:nome, :email, :mensagem)");
         $stmt_usuario->execute([
             ':nome' => $_POST["nome"], // Usa o valor original para inserção no banco
