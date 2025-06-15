@@ -1,4 +1,3 @@
-// DOM para o formulário de contato
 document.addEventListener("DOMContentLoaded", () => {
 
     const formContato = document.getElementById("formContato");

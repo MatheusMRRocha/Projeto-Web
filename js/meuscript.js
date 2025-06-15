@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const botaoCategorias = document.getElementById('btn-categorias');
     const listaCategorias = document.getElementById('lista-categorias');
 
-    let categoriasCarregadas = false; // controle para carregar só uma vez
-    let categoriasVisiveis = false; // controle para esconder/mostrar
+    let categoriasCarregadas = false;
+    let categoriasVisiveis = false;
 
     if (botaoCategorias && listaCategorias) {
         botaoCategorias.addEventListener('click', () => {
             if (!categoriasCarregadas) {
                 // Primeira vez: busca as categorias no servidor
-                // Certifique-se de que o caminho para noticias.php está correto
                 fetch('../html/noticias.php')
                     .then(response => response.json())
                     .then(categorias => {

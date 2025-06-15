@@ -15,7 +15,6 @@ $base_url = '/Projeto-Web/';
 
     <div class="logo_nome">
         <img src="<?php echo $base_url; ?>img/logo.png" alt="Logo do Portal">
-        <h1>Game News</h1>
     </div>
 
     
