@@ -7,15 +7,15 @@ session_start(); // Inicia a sessão para que o cabeçalho possa verificar o sta
     <meta charset="UTF-8">
     <title>Página Inicial - Game News</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/meuscript.js"></script>
+    <script defer src="../js/meuscript.js"></script>
 </head>
 <body>
     <div class="container">
-        <?php include '../html/cabecalho.php'; ?>
-
+        <?php include '../html/cabecalho.php'; ?> 
+        
         <main class="conteudo" style="margin-top: 20px;">
             <h1>Portal de Notícias de Jogos</h1>
-
+            
             <div class="news-links">
                 <h2>Últimas Notícias</h2>
                 <ul class="latest-news-list">
@@ -31,13 +31,13 @@ session_start(); // Inicia a sessão para que o cabeçalho possa verificar o sta
                     <li><a href="../html/noticias/noticia.php?id=7">Dragon Age: Dreadwolf promete revolução no sistema de escolhas</a></li>
                 </ul>
             </div>
-
+            
             <h2>Categorias</h2>
             <button id="btn-categorias">Mostrar Categorias</button>
             <ul id="lista-categorias"></ul>
         </main>
 
-        <?php include '../html/rodape.php'; ?>
+        <?php include '../html/rodape.php'; ?> 
     </div>
 </body>
 </html>

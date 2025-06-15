@@ -1,101 +1,70 @@
 <?php
-session_start(); // Inicia a sessão para que o cabeçalho possa verificar o status de login
+// É fundamental iniciar a sessão em qualquer arquivo que use ou precise verificar o status da sessão.
+// A verificação 'session_status() == PHP_SESSION_NONE' impede erros caso session_start() já tenha sido chamado.
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Verifica se o usuário está logado
+$logado = isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
+$nome_usuario = $logado ? htmlspecialchars($_SESSION['user_name']) : 'Visitante';
+
+// Define o caminho base do seu projeto.
+// Isso é útil para links e recursos (como imagens e CSS) para garantir que funcionem
+// independentemente de onde o arquivo PHP está sendo executado.
+// Ajuste 'Projeto-Web' se o nome da sua pasta raiz for diferente no servidor.
+$base_url = '/Projeto-Web/';
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Página Inicial - Game News</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/meuscript.js"></script>
-    <!-- Incluindo Font Awesome para os ícones de navegação do carrossel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <?php include '../html/cabecalho.php'; ?>
 
-        <main class="conteudo">
-            <h1>Portal de Notícias de Jogos</h1>
-
-            <section class="news-carousel-section">
-                <h2>Últimas Notícias</h2>
-                <div class="carousel-container">
-                    <button class="carousel-nav-btn prev-btn" aria-label="Notícia Anterior"><i class="fas fa-chevron-left"></i></button>
-                    <div class="carousel-wrapper">
-                        <!-- Cada notícia será um item do carrossel -->
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=1">
-                                <!-- Placeholder de imagem. Substitua por suas próprias imagens -->
-                                <img src="https://placehold.co/400x225/3f51b5/ffffff?text=God+of+War+Ragnarok" alt="God of War Ragnarok">
-                                <div class="item-title">God of War Ragnarok: Nova expansão anunciada!</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=2">
-                                <img src="https://placehold.co/400x225/28a745/ffffff?text=FIFA+26" alt="FIFA 26">
-                                <div class="item-title">FIFA 26: EA revoluciona o Modo Carreira</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=3">
-                                <img src="https://placehold.co/400x225/ffc107/ffffff?text=Cyberpunk+2077" alt="Cyberpunk 2077">
-                                <div class="item-title">Cyberpunk 2077: Phantom Liberty já está disponível</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=4">
-                                <img src="https://placehold.co/400x225/dc3545/ffffff?text=The+Last+of+Us" alt="The Last of Us Parte III">
-                                <div class="item-title">The Last of Us Parte III: Produção confirmada!</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=8">
-                                <img src="https://placehold.co/400x225/6f42c1/ffffff?text=High+On+Life+2" alt="High On Life 2">
-                                <div class="item-title">High On Life 2: Anunciado com Mais Humor e Ação!</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=10">
-                                <img src="https://placehold.co/400x225/fd7e14/ffffff?text=Titanfall+3" alt="Titanfall 3">
-                                <div class="item-title">Titanfall 3: CEO da Respawn Deixa Fãs Esperançosas!</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=9">
-                                <img src="https://placehold.co/400x225/20c997/ffffff?text=Minecraft+2" alt="Minecraft 2">
-                                <div class="item-title">Minecraft 2: Anúncio Gera Expectativa Apesar de Cancelamento</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=6">
-                                <img src="https://placehold.co/400x225/17a2b8/ffffff?text=Forza+Horizon+6" alt="Forza Horizon 6">
-                                <div class="item-title">Forza Horizon 6: Brasil como Mapa Confirmado!</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=5">
-                                <img src="https://placehold.co/400x225/6610f2/ffffff?text=Baldurs+Gate+3" alt="Baldur's Gate 3">
-                                <div class="item-title">Baldur’s Gate 3: Consagrado o Melhor RPG de 2024!</div>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="../html/noticias/noticia.php?id=7">
-                                <img src="https://placehold.co/400x225/e83e8c/ffffff?text=Dragon+Age" alt="Dragon Age: Dreadwolf">
-                                <div class="item-title">Dragon Age: Dreadwolf promete revolução no sistema de escolhas</div>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="carousel-nav-btn next-btn" aria-label="Próxima Notícia"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </section>
-
-            <h2>Categorias</h2>
-            <button id="btn-categorias">Mostrar Categorias</button>
-            <ul id="lista-categorias"></ul>
-        </main>
-
-        <?php include '../html/rodape.php'; ?>
+<header class="cabecalho">
+    <!-- A logo e o nome do site ficam à esquerda -->
+    <div class="logo_nome">
+        <img src="<?php echo $base_url; ?>img/logo.png" alt="Logo do Portal">
+        <h1>Game News</h1>
     </div>
-</body>
-</html>
+
+    <!-- Os links de navegação e a seção de perfil/login ficam à direita -->
+    <div class="cabecalho_links">
+        <h2><a href="<?php echo $base_url; ?>index/index.php">Home</a></h2>
+        <h2><a href="<?php echo $base_url; ?>html/novidades.php">Novidades</a></h2>
+        <h2><a href="<?php echo $base_url; ?>html/reviews.php">Reviews</a></h2>
+
+        <?php if ($logado): // Se o usuário estiver logado ?>
+            <div class="perfil-dropdown">
+                <button class="perfil-btn">
+                    <img src="<?php echo $base_url; ?>img/logo.png" alt="Ícone de Perfil">
+                    <span>Olá, <?php echo $nome_usuario; ?></span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="<?php echo $base_url; ?>html/dashboard.php">Dashboard</a>
+                    <a href="<?php echo $base_url; ?>html/perfil.php">Meu Perfil</a>
+                    <a href="<?php echo $base_url; ?>html/minhas_categorias.php">Minhas Categorias</a>
+                    <a href="<?php echo $base_url; ?>funcoes/logout.php">Sair</a>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const perfilDropdown = document.querySelector('.perfil-dropdown');
+                    const dropdownContent = perfilDropdown.querySelector('.dropdown-content');
+                    const perfilBtn = perfilDropdown.querySelector('.perfil-btn');
+
+                    perfilBtn.addEventListener('click', function(event) {
+                        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                        event.stopPropagation();
+                    });
+
+                    window.addEventListener('click', function(event) {
+                        if (!perfilDropdown.contains(event.target)) {
+                            dropdownContent.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+
+        <?php else: // Se o usuário NÃO estiver logado ?>
+            <h3><a href="<?php echo $base_url; ?>html/login.php">Login</a></h3>
+            <h3><a href="<?php echo $base_url; ?>html/cadastro.php">Cadastro</a></h3>
+        <?php endif; ?>
+    </div>
+</header>
