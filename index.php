@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Página Inicial - Game News</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="..css/style.css">
     <script defer src="js/meuscript.js"></script>
 </head>
 <body>
