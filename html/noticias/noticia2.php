@@ -11,7 +11,7 @@
 <div class="container">
     <h1>FIFA 26: EA revoluciona o Modo Carreira</h1>
 
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/28/FIFA_23_Cover.jpg" alt="FIFA" style="width:100%; border-radius:10px; margin-top:20px;">
+    <img src="../img/fifa26.jpg" alt="FIFA" style="width:100%; border-radius:10px; margin-top:20px;">
 
     <p>O Modo Carreira do FIFA 26 será completamente reformulado, segundo a EA Sports. Agora, jogadores poderão realizar entrevistas ao vivo, participar de eventos sociais e ver seus atletas evoluírem com inteligência artificial dinâmica.</p>
 
