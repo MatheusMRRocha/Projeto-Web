@@ -14,11 +14,23 @@
     <?php include 'cabecalho.php'; ?>
     <h2>Cadastro</h2>
     <form method="POST" action="">
-        <label>Login:</label>
+        <label>Nome de Usuário:</label>
         <input type="text" name="login" required>
+
+        <label>Idade:</label>
+        <input type="number" name="idade" min="10" max="120" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
         <label>Senha:</label>
         <input type="password" name="senha" required>
+
+        <fieldset style="margin-top: 20px;">
+            <legend><strong>Deseja receber notificações por email?</strong></legend>
+            <label><input type="radio" name="notificacoes" value="sim"> Sim</label>
+            <label><input type="radio" name="notificacoes" value="nao" checked> Não</label>
+        </fieldset><br>
 
         <button type="submit">Cadastrar</button>
     </form>
@@ -36,3 +48,4 @@
 </div>
 </body>
 </html>
+
