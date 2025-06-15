@@ -13,7 +13,6 @@
             <h1>The Last of Us Parte III: Produção confirmada!</h1>
 
             <img src="../../img/The_Last_Of_Us_Parte_II.jpg" alt="The Last of Us"style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
-">
 
             <p>A Naughty Dog confirmou que The Last of Us Part III está oficialmente em produção. Poucos detalhes foram revelados, mas rumores apontam que o novo jogo trará novos personagens e aprofundará ainda mais o mundo pós-apocalíptico.</p>
             <p>Neil Druckmann, diretor criativo, afirmou que o roteiro está sendo desenvolvido com foco em temas de redenção, sobrevivência e esperança. Ainda não há previsão oficial de lançamento.</p>
