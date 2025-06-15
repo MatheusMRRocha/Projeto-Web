@@ -21,9 +21,9 @@
             <p>Esta expansão promete mais de 20 horas de conteúdo extra, novos equipamentos, desafios e missões secundárias para os jogadores explorarem.</p>
 
             <div style="text-align: center; margin-top: 30px;">
-                <a href="../../index.php">
+                <a href="../../index/index.php">
                     <button style="
-                        background-color: #3f51b5; /* Cor azul do seu tema (use a do CSS principal) */
+                        background-color: #3f51b5;
                         color: white;
                         padding: 10px 20px;
                         border: none;
