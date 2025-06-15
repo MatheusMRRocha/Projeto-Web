@@ -2,6 +2,7 @@
     <section>
         <div id="cabecalho">
             <div class="logo_nome">
+                <img src="../../img/logo.png" alt="Logo do Portal" style="height: 50px; margin-right: 15px;">
                 <h1 class="logo_nome">Game News</h1>
             </div>
             <div class="cabecalho_links">
