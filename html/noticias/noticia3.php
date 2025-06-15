@@ -9,6 +9,8 @@
 <body>
     
 <div class="container">
+    <?php include '../cabecalho.php'; ?>
+
     <h1>Cyberpunk 2077: Phantom Liberty já está disponível</h1>
 
     <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077" style="width:100%; border-radius:10px; margin-top:20px;">
@@ -22,6 +24,8 @@
             <button>Voltar para a Home</button>
         </a>
     </div>
+    
+    <?php include '../rodape.php'; ?> </div>
 </div>
 
 </body>

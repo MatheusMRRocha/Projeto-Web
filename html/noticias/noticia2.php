@@ -9,6 +9,8 @@
 <body>
     
 <div class="container">
+    <?php include '../cabecalho.php'; ?>
+
     <h1>FIFA 26: EA revoluciona o Modo Carreira</h1>
 
     <img src="../img/fifa26.jpg" alt="FIFA" style="width:100%; border-radius:10px; margin-top:20px;">
@@ -22,6 +24,8 @@
             <button>Voltar para a Home</button>
         </a>
     </div>
+
+    <?php include '../rodape.php'; ?> </div>
 </div>
 
 </body>
