@@ -2,10 +2,6 @@
 // Inclui o arquivo de conexão com o banco de dados.
 require '../conexao_com_banco/conexao.php';
 
-// --- Funções Auxiliares para Redirecionamento e Feedback ---
-// Estas funções são usadas para redirecionar o usuário de volta ao formulário de cadastro,
-// passando mensagens de sucesso ou erro via URL (parâmetros GET).
-
 /**
  * Redireciona o usuário para a página de cadastro com uma mensagem de erro.
  * @param string $message A mensagem de erro a ser exibida.
@@ -26,17 +22,13 @@ function redirectWithSuccess($message) {
     exit(); // É crucial usar exit() após um header() para parar a execução do script.
 }
 
-// --- Início do Processamento do Formulário ---
-
 // Verifica se a requisição HTTP foi feita usando o método POST.
 // Isso impede que o script processe dados se for acessado diretamente sem um formulário.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 1. Coleta e sanitiza os dados recebidos do formulário.
-    // 'trim()' remove espaços em branco no início e no fim.
-    // '?? ''' (operador null coalescing) define um valor padrão de string vazia
     // caso a chave não exista no $_POST, evitando avisos 'Undefined array key'.
     $nome = trim($_POST['nome'] ?? '');
-    $idade = (int)($_POST['idade'] ?? 0); // Converte a idade para inteiro.
+    $idade = (int)($_POST['idade'] ?? 0);
     $email = trim($_POST['email'] ?? '');
     $senha_plana = $_POST['senha'] ?? ''; // Senha em texto puro ANTES de ser hashed.
     $notificacoes = $_POST['notificacoes'] ?? 'nao'; // Padrão 'nao' se nenhum rádio for selecionado.
@@ -44,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $categorias_selecionadas_nomes = $_POST['categorias'] ?? [];
 
     // 2. Realiza validações básicas nos dados.
-    // Se alguma validação falhar, redirecionamos imediatamente com uma mensagem de erro.
     if (empty($nome) || empty($email) || empty($senha_plana)) {
         redirectWithError("Nome, Email e Senha são campos obrigatórios e não podem estar vazios.");
     }
@@ -62,16 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // 3. Gera o hash da senha.
-    // É CRÍTICO SEMPRE armazenar hashes de senhas no banco de dados, NUNCA a senha em texto puro.
-    // password_hash() usa um algoritmo seguro e adiciona um "salt" automaticamente.
     $senha_hash = password_hash($senha_plana, PASSWORD_DEFAULT);
 
     // 4. Inicia uma transação no banco de dados.
-    // As transações são fundamentais para garantir a integridade dos dados:
-    // Todas as operações dentro do bloco 'try' (inserção do usuário e das categorias)
-    // devem ser bem-sucedidas para que as mudanças sejam salvas (commit).
-    // Se qualquer parte falhar, todas as mudanças são desfeitas (rollback),
-    // deixando o banco de dados em um estado consistente, sem dados incompletos.
     try {
         $pdo->beginTransaction();
 
@@ -100,7 +84,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ]);
 
         // Pega o ID do usuário recém-inserido.
-        // É essencial ter este ID para poder associar as categorias a este usuário na tabela de junção.
         $usuario_id = $pdo->lastInsertId();
 
         // 4.3. Processa e insere as categorias de interesse do usuário na tabela de junção 'usuarios_categorias'.
@@ -124,14 +107,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         ':categoria_id' => $categoria_id
                     ]);
                 }
-                // Se uma categoria selecionada no formulário não for encontrada na sua tabela 'categorias'
-                // (por exemplo, um valor inválido foi manipulado no HTML), ela será simplesmente ignorada aqui.
-                // Você pode adicionar um log de erro ou uma mensagem específica se precisar monitorar isso.
             }
         }
 
         // 5. Confirma a transação.
-        // Se todas as operações foram bem-sucedidas no bloco 'try', as mudanças são salvas permanentemente no banco.
         $pdo->commit();
         redirectWithSuccess("Cadastro realizado com sucesso! Agora você pode fazer login.");
 
@@ -140,10 +119,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pdo->rollBack();
 
         // Para depuração: Registra o erro completo no log de erros do PHP.
-        // IMPORTANTE: REMOVA/COMENTE ESTA LINHA EM AMBIENTE DE PRODUÇÃO para evitar exposição de dados sensíveis.
         error_log("Erro no cadastro: " . $e->getMessage() . " - SQLState: " . $e->getCode());
 
-        // Fornece uma mensagem de erro mais amigável para o usuário no navegador.
+        // Fornece uma mensagem de erro.
         // Verifica o código de erro específico para violação de restrição UNIQUE no PostgreSQL (SQLSTATE 23505).
         if ($e->getCode() == '23505') {
             redirectWithError("Este email já está cadastrado. Por favor, use outro email.");
