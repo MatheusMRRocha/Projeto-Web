@@ -14,7 +14,7 @@
         <main class="conteudo">
             <h2>Forza Horizon 6 é anunciado com cenário no Brasil</h2>
 
-            <img src="forzahorizon.jpg" alt="Forza Horizon 6" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
+            <img src="../../img/forzahorizon.jpg" alt="Forza Horizon 6" style="width:100%; border-radius:10px; margin-top:20px; display: block; margin-left: auto; margin-right: auto; max-width: 800px;">
 
             <p>A Playground Games confirmou que Forza Horizon 6 terá como mapa o Brasil, com cidades, florestas e praias inspiradas no território nacional.</p>
             <p>Espera-se que o novo título explore a rica diversidade geográfica brasileira, desde as vibrantes ruas urbanas até as paisagens exuberantes da Amazônia e as famosas praias do Nordeste.</p>
