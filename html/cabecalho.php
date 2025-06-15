@@ -33,7 +33,7 @@ $nome_usuario = $logado ? htmlspecialchars($_SESSION['user_name']) : 'Visitante'
             </div>
 
             <div class="cabecalho_links" style="display: flex; align-items: center; gap: 20px;">
-                <h2 class="cabecalho_links" style="margin: 0;"><a href="/Projeto-Web/index.php" style="color: white; text-decoration: none;">Home</a></h2>
+                <h2 class="cabecalho_links" style="margin: 0;"><a href="/Projeto-Web/index/index.php" style="color: white; text-decoration: none;">Home</a></h2>
                 <h2 class="cabecalho_links" style="margin: 0;"><a href="/Projeto-Web/html/novidades.php" style="color: white; text-decoration: none;">Novidades</a></h2>
                 <h2 class="cabecalho_links" style="margin: 0;"><a href="/Projeto-Web/html/reviews.php" style="color: white; text-decoration: none;">Reviews</a></h2>
 
