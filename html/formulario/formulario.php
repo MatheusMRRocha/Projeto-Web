@@ -24,6 +24,16 @@
                     <label for="mensagem">Mensagem:</label><br>
                     <textarea id="mensagem" name="mensagem" required></textarea><br><br>
 
+                    <fieldset style="margin-top: 20px;">
+                        <legend><strong>Quais categorias de jogos você gostaria de receber notificações?</strong></legend>
+                        
+                        <label><input type="checkbox" name="categorias[]" value="Ação"> Ação</label><br>
+                        <label><input type="checkbox" name="categorias[]" value="Esportes"> Esportes</label><br>
+                        <label><input type="checkbox" name="categorias[]" value="RPG"> RPG</label><br>
+                        <label><input type="checkbox" name="categorias[]" value="Corrida"> Corrida</label><br>
+                        <label><input type="checkbox" name="categorias[]" value="Terror"> Terror</label><br>
+                    </fieldset><br>
+
                     <button type="submit">Enviar</button>
                 </form>
             </div>
